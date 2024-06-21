@@ -1,4 +1,5 @@
-import { Home as Homeicon, Search, Library, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Home as Homeicon, Search, Library, ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -43,13 +44,49 @@ export default function Home() {
           </button>
         </div>
         <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
-        <div className="grid grid-cols-3 gap-4">
-          <div className="bg-white/10 rounded">Funk Generation</div>
-          <div className="bg-white/10 rounded">This is Matuê</div>
-          <div className="bg-white/10 rounded">This is Gloria Groove</div>
-          <div className="bg-white/10 rounded">Creme</div>
-          <div className="bg-white/10 rounded">Trapperz Brasil</div>
-          <div className="bg-white/10 rounded">Rádio de LUDMILLA</div>
+        <div className="grid grid-cols-3 gap-4 mt-4">
+          <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+            <Image src="/anitta.png" width={104} height={104} alt="Capa do álbum Funk Generation da cantora Anitta" />
+            <strong>Funk Generation</strong>
+            <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-500 text-black ml-auto mr-8 invisible group-hover:visible">
+              <Play />
+            </button>
+          </a>
+          <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+            <Image src="/matue.jpg" width={104} height={104} alt="Playlist do cantor Matuê" />
+            <strong>This is Matuê</strong>
+            <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-500 text-black ml-auto mr-8 invisible group-hover:visible">
+              <Play />
+            </button>
+          </a>
+          <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+            <Image src="/gloria.jpg" width={104} height={104} alt="Playlist da cantora Gloria Groove" />
+            <strong>This is Gloria Groove</strong>
+            <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-500 text-black ml-auto mr-8 invisible group-hover:visible">
+              <Play />
+            </button>
+          </a>
+          <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+            <Image src="/creme.jpeg" width={104} height={104} alt="Playlist de cria" />
+            <strong>Creme</strong>
+            <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-500 text-black ml-auto mr-8 invisible group-hover:visible">
+              <Play />
+            </button>
+          </a>
+          <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+            <Image src="/trap.jpeg" width={104} height={104} alt="Playlist de trapperz" />
+            <strong>Trapperz Brasil</strong>
+            <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-500 text-black ml-auto mr-8 invisible group-hover:visible">
+              <Play />
+            </button>
+          </a>
+          <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+            <Image src="/rap.jpeg" width={104} height={104} alt="Playlist de rap" />
+            <strong>Hip Hop, Rap e Trap Brasil</strong>
+            <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-500 text-black ml-auto mr-8 invisible group-hover:visible">
+              <Play />
+            </button>
+          </a>
         </div>
       </main>
     </div>
