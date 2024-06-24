@@ -34,8 +34,8 @@ export default function Home() {
           <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Anitta</a>
         </nav>
       </aside>
-      <main className="flex-1 p-6">
-        <div className="flex items-center gap-3 ">
+      <main className="flex-1 p-2 pl-5">
+        <div className="flex items-center gap-3">
           <button className="rounded-full bg-black/40 p-1">
             <ChevronLeft />
           </button>
@@ -44,6 +44,7 @@ export default function Home() {
           </button>
         </div>
         <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
+
         <div className="grid grid-cols-3 gap-4 mt-4">
           <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
             <Image src="/anitta.png" width={104} height={104} alt="Capa do álbum Funk Generation da cantora Anitta" />
@@ -88,9 +89,64 @@ export default function Home() {
             </button>
           </a>
         </div>
+
+        <h2 className="font-semibold text-2xl mt-10">Made for Gabrieli Martins</h2>
+
+        <div className="grid grid-cols-8 gap-4 mt-4">
+          <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
+            <Image src="/daily1.jpeg" className="w-full rounded-md" width={104} height={104} alt="Playlist do dia" />
+            <strong className="text-semibold">Daily Mix 1</strong>
+            <span className="text-sm text-zinc-500">Rihanna</span>
+          </a>
+          <a href="" className="bg-white/5 p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
+            <Image src="/daily6.jpeg" className="w-full rounded-md" width={104} height={104} alt="Playlist do dia" />
+            <strong className="text-semibold">Daily Mix 2</strong>
+            <span className="text-sm text-zinc-500">Drake</span>
+          </a>
+          <a href="" className="bg-white/5 p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
+            <Image src="/daily3.jpeg" className="w-full rounded-md" width={104} height={104} alt="Playlist do dia" />
+            <strong className="text-semibold">Daily Mix 3</strong>
+            <span className="text-sm text-zinc-500">Eminem</span>
+          </a>
+          <a href="" className="bg-white/5 p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
+            <Image src="/daily7.jpeg" className="w-full rounded-md" width={104} height={104} alt="Playlist do dia" />
+            <strong className="text-semibold">Daily Mix 4</strong>
+            <span className="text-sm text-zinc-500">Rap</span>
+          </a>
+          <a href="" className="bg-white/5 p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
+            <Image src="/daily5.jpeg" className="w-full rounded-md" width={104} height={104} alt="Playlist do dia" />
+            <strong className="text-semibold">Daily Mix 5</strong>
+            <span className="text-sm text-zinc-500">Billie Eilish</span>
+          </a>
+          <a href="" className="bg-white/5 p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
+            <Image src="/daily8.jpg" className="w-full rounded-md" width={104} height={104} alt="Playlist do dia" />
+            <strong className="text-semibold">Daily Mix 6</strong>
+            <span className="text-sm text-zinc-500">Anderson .Paak</span>
+          </a>
+          <a href="" className="bg-white/5 p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
+            <Image src="/daily2.jpeg" className="w-full rounded-md" width={104} height={104} alt="Playlist do dia" />
+            <strong className="text-semibold">Daily Mix 7</strong>
+            <span className="text-sm text-zinc-500">The Weeknd</span>
+          </a>
+          <a href="" className="bg-white/5 p-2 rounded-md flex flex-col gap-2 hover:bg-white/10">
+            <Image src="/daily4.jpeg" className="w-full rounded-md" width={104} height={104} alt="Playlist do dia" />
+            <strong className="text-semibold">Daily Mix 8</strong>
+            <span className="text-sm text-zinc-500">Post Malone</span>
+          </a>
+        </div>
       </main>
     </div>
-    <footer className="bg-zinc-800 border-t border-zinc-700 p-6">Footer</footer>
+    <footer className="bg-zinc-800 border-t border-zinc-700 p-4 flex items-center justify-between">
+      <div className="flex items-center gap-3">
+        <Image src="/ru.jpeg" width={56} height={56} alt="Playlist do dia" />
+        <div className="flex flex-col">
+          <strong className="font-normal">R U Mine?</strong>
+          <span className="text-xs text-zinc-500">Arctic Monkeys</span>
+        </div>
+      </div>
+      <div></div>
+      <div></div>
+    </footer>
    </div>
   );
 }
